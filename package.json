@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "0.0.1",
+  "description": "Site de reservation de repas de luxe",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MecyDev/CyrilMechain_3_15042021.git"
+  },
+  "author": "MecyDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MecyDev/CyrilMechain_3_15042021/issues"
+  },
+  "homepage": "https://github.com/MecyDev/CyrilMechain_3_15042021#readme"
+}
