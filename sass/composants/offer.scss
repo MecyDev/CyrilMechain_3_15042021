@@ -1,0 +1,28 @@
+.section--offer {
+  display: flex;
+  height: 287px;
+  background-color: #f6f6f6;
+  margin-top: 50px;
+}
+
+.offer {
+  width: 90%;
+  height: 214px;
+  margin: auto;
+  text-align: center;
+
+  &__heading {
+    width: 70%;
+    margin: auto;
+    font-family: $font-text;
+    font-weight: 900;
+    font-size: 2.4rem;
+  }
+  &__discover {
+    font-weight: lighter;
+    font-size: 1.8rem;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 48px;
+  }
+}
