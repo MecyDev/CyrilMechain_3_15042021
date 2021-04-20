@@ -11,13 +11,16 @@
   width: 95%;
   height: 74px;
   background-color: #f6f6f6;
-  padding: 28px 72px;
   border-radius: 20px;
   box-shadow: 0 5px 10px 2px #ebebeb;
 
+  &--mauve {
+    background-color: #f5edff;
+  }
+
   &__num {
     position: absolute;
-    top: 23px;
+    top: 24px;
     left: -8px;
     width: 24px;
     height: 24px;
@@ -31,13 +34,17 @@
 
   &__ico {
     position: absolute;
-    top: 25px;
+    top: 27px;
     left: 40px;
+
+    &--variation {
+      color: $color-primary;
+    }
   }
 
   &__name {
     position: absolute;
-    top: 25px;
+    top: 28px;
     left: 80px;
     font-weight: bold;
     font-size: 1.6rem;
