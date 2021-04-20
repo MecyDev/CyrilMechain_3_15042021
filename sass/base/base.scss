@@ -5,8 +5,11 @@ html {
 
 section {
   width: 100%;
+  display: flex;
 }
 
 h1 {
-  font-family: $font-log_and_tit;
+  font-family: $font-text;
+  font-weight: bold;
+  font-size: 2.5rem;
 }

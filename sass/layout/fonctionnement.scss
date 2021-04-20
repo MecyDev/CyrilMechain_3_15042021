@@ -1,0 +1,45 @@
+.section--fonctionnement {
+  height: 430px;
+}
+
+.heading {
+  width: 100%;
+}
+
+.operation {
+  position: relative;
+  width: 95%;
+  height: 74px;
+  background-color: #f6f6f6;
+  padding: 28px 72px;
+  border-radius: 20px;
+
+  &__num {
+    position: absolute;
+    top: 23px;
+    left: -8px;
+    /*display: inline-block;*/
+    width: 24px;
+    height: 24px;
+    background-color: $color-primary;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  &__ico {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+  }
+
+  &__name {
+    position: absolute;
+    top: 24px;
+    left: 80px;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
