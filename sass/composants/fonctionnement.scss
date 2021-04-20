@@ -13,12 +13,12 @@
   background-color: #f6f6f6;
   padding: 28px 72px;
   border-radius: 20px;
+  box-shadow: 0 5px 10px 2px #ebebeb;
 
   &__num {
     position: absolute;
     top: 23px;
     left: -8px;
-    /*display: inline-block;*/
     width: 24px;
     height: 24px;
     background-color: $color-primary;
@@ -37,7 +37,7 @@
 
   &__name {
     position: absolute;
-    top: 24px;
+    top: 25px;
     left: 80px;
     font-weight: bold;
     font-size: 1.6rem;
