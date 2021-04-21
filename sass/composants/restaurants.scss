@@ -1,0 +1,54 @@
+.section--restaurants {
+  height: 1226px;
+  background-color: $back-color;
+}
+
+.card-menu {
+  position: relative;
+  width: 100%;
+  height: 251px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 5px #ebebeb;
+
+  &__cont-img {
+    width: 100%;
+    height: 174px;
+  }
+
+  &__img {
+    height: 174px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  &__heading {
+    position: absolute;
+    top: 189px;
+    left: 14px;
+  }
+
+  &__district {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    top: 215px;
+    left: 14px;
+  }
+
+  &__like {
+    position: absolute;
+    top: 196px;
+    right: 27px;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 40%);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+}
