@@ -1,11 +1,13 @@
 header {
   width: 100%;
-  height: 64px;
+  height: 60px;
   padding: 15px;
   text-align: center;
 
   .header__heading {
-    font-family: $font-log_and_tit;
-    font-size: 3rem;
+    width: 48%;
+    margin-top: 3px;
+    /*font-family: $font-log_and_tit;
+    font-size: 3rem;*/
   }
 }
