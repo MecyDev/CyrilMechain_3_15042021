@@ -23,12 +23,17 @@ footer {
     }
 
     &__ul {
-      margin-top: 20px;
+      margin-top: 15px;
       font-size: 1.6rem;
     }
 
     &__li {
       margin-bottom: 8px;
+    }
+
+    &__ico {
+      font-size: 1.15rem;
+      margin-left: -2px;
     }
   }
 }

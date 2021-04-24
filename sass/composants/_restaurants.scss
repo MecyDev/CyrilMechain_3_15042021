@@ -1,5 +1,6 @@
 .section--restaurants {
   height: 1226px;
+  padding-bottom: 20px;
   background-color: $back-color;
 }
 
@@ -39,7 +40,18 @@
   &__like {
     position: absolute;
     top: 196px;
-    right: 27px;
+    right: 26px;
+    font-size: 2.3rem;
+    color: $back-color;
+    /*text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+      #000000 1px -1px;*/
+    -webkit-text-stroke: 1px black; /*rendre le coeur avec les bords fins. marche sur firefox*/
+
+    &:hover {
+      color: red;
+      /*text-shadow: none;*/
+      -webkit-text-stroke: unset;
+    }
   }
 
   &__tag {

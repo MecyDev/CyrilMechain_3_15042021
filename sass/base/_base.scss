@@ -31,6 +31,15 @@ h3 {
   font-size: 1.8rem;
 }
 
+.heading {
+  width: 100%;
+
+  &--resto {
+    margin-top: 11px;
+    margin-bottom: 5px;
+  }
+}
+
 a,
 :hover,
 :focus,

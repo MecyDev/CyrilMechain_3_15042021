@@ -9,9 +9,11 @@
   text-align: center;
 
   &__heading {
-    width: 70%;
+    width: 75%;
     margin: auto;
+    padding-right: 18px;
     font-family: $font-text;
+    font-size: 2.4rem;
   }
   &__discover {
     font-weight: lighter;
@@ -19,5 +21,6 @@
     color: grey;
     margin-top: 10px;
     margin-bottom: 45px;
+    padding-left: 10px;
   }
 }
