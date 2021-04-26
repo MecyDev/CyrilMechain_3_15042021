@@ -38,20 +38,15 @@
   }
 
   &__like {
-    position: absolute;
-    top: 196px;
-    right: 26px;
-    font-size: 2.3rem;
-    /*text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
-      #000000 1px -1px;*/
-
-    @include color-like-hover;
-
-    /*&:hover {
-      color: red;
-      /*text-shadow: none;
-      -webkit-text-stroke: unset;
-    }*/
+    & i {
+      position: absolute;
+      top: 196px;
+      right: 26px;
+      font-size: 2.3rem;
+      /*text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+        #000000 1px -1px;*/
+      @include anim-like;
+    }
   }
 
   &__tag {
