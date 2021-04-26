@@ -1,0 +1,31 @@
+.loading {
+  position: fixed;
+  margin-top: -64px;
+  background-color: $color-secondary;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: off-loading 2.5s linear forwards;
+
+  &__back {
+    position: absolute;
+    background-color: $color-primary;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1500;
+    animation: anim-opa 3s ease-in-out infinite;
+  }
+
+  &__spinner {
+    z-index: 2500;
+    width: 70px;
+    height: 70px;
+    border: 10px solid white;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
+}
