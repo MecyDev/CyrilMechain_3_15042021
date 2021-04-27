@@ -1,15 +1,1 @@
-@mixin anim-like {
-  color: rgba($color: $back-color, $alpha: 1);
-  background: linear-gradient(0deg, $color-secondary, 60%, $color-primary);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1px black; /*rendre le coeur avec les bords fins. marche sur firefox*/
-  /*transition: color 800ms ease-out;*/
 
-  &:hover {
-    animation-fill-mode: forwards;
-    animation: scale-max-min-max 500ms;
-    color: rgba($color: $back-color, $alpha: 0);
-    -webkit-text-stroke: unset;
-  }
-}

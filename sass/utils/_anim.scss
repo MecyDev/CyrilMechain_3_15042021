@@ -1,19 +1,15 @@
 @keyframes scale-max-min-max {
   0% {
-    color: rgba($color: $back-color, $alpha: 1);
     transform: scale(1);
   }
   25% {
     transform: scale(0.5);
-    color: rgba($color: $back-color, $alpha: 0.8);
   }
   50% {
     transform: scale(1);
-    color: rgba($color: $back-color, $alpha: 0.7);
   }
   100% {
-    color: rgba($color: $back-color, $alpha: 0);
-    -webkit-text-stroke: unset;
+    transform: scale(1);
   }
 }
 
