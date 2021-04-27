@@ -9,3 +9,12 @@ $color-tertiary: #99e2d0;
 
 /*background color*/
 $back-color: #f6f6f6;
+
+/*gradient bouton*/
+$btn-gradient: linear-gradient(175deg, $color-secondary, 55%, $color-primary);
+$btn-gradient-ligth: linear-gradient(
+  175deg,
+  lighten($color-secondary, 5%),
+  55%,
+  lighten($color-primary, 5%)
+);

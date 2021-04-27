@@ -1,13 +1,13 @@
 .btn {
-  background: linear-gradient(175deg, $color-secondary, 55%, $color-primary);
+  position: relative;
+  z-index: 1;
+  background: $btn-gradient;
   color: white;
   padding: 15px 20px;
-  text-decoration: none;
   font-size: 1.6rem;
   border-radius: 30px;
   box-shadow: 0 3px 6px 2px #cbcbcb;
   opacity: 100%;
-  transition: opacity 500ms ease-in-out, box-shadow 600ms ease-in-out;
 
     &--order {
     padding-left: 50px;
@@ -15,13 +15,23 @@
   }
 
   &:hover {
-    /*background: linear-gradient(
-      175deg,
-      scale-color($color-secondary, $lightness: -3%),
-      55%,
-      scale-color($color-primary, $lightness: +30%)
-    );*/
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $btn-gradient-ligth;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 30px;
     box-shadow: 0 2px 0px 1px #cbcbcb;
-    opacity: 80%;
+    transition: opacity 450ms;
   }
 }

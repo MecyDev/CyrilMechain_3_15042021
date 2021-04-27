@@ -46,3 +46,12 @@ a,
 :active {
   text-decoration: none;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
