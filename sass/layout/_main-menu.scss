@@ -30,15 +30,39 @@
   }
 
   &__like {
+    position: relative;
     & i {
       font-size: 2.3rem;
       margin-top: -4px;
       margin-right: 19px;
+      color: transparent;
+      background: linear-gradient(0deg, $color-secondary, 60%, $color-primary);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    &:hover {
+      &::after {
+        -webkit-text-stroke: unset;
+        opacity: 0;
+        transition: opacity 2.5s;
+      }
+    }
+
+    &::after {
+      content: "\f004";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 2.3rem;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      right: 19px;
+      bottom: 0;
+      background-color: $back-color;
       color: $back-color;
-      /*text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
-        #000000 1px -1px;*/
-      -webkit-text-stroke: 1px black; /*rendre le coeur avec les bords fins. marche sur firefox*/
-      @include anim-like;
+      -webkit-text-stroke: 1px black;
+      opacity: 1;
     }
   }
 }
