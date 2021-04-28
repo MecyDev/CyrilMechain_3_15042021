@@ -10,7 +10,6 @@
     font-weight: normal;
     font-size: 1.6rem;
     text-transform: uppercase;
-    text-overflow: ellipsis;
   }
 
   hr {
@@ -24,32 +23,66 @@
 }
 
 .article-plat {
-  position: relative;
+  display: flex;
+  align-items: stretch;
   width: 100%;
   height: 68px;
   margin-top: 15px;
-  background-color: white;
   border-radius: 15px;
   box-shadow: 0 5px 10px 2px #ebebeb;
+  overflow: hidden;
+  background-color: $color-tertiary;
+  transform-origin: left;
 
-  &__heading {
-    position: absolute;
-    top: 11px;
-    left: 5px;
+  &:hover {
+    cursor: pointer;
+    & .article-plat__check {
+      width: 75px;
+      transition: width 300ms ease-out;
+      animation: spinner 300ms ease-out;
+    }
   }
 
-  &__accomp {
-    position: absolute;
-    top: 37px;
-    left: 5px;
-    font-size: 1.5rem;
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 68px;
+    background-color: white;
+    border-radius: 15px 0 0 15px;
+
+    &__heading {
+      position: absolute;
+      top: 11px;
+      left: 10px;
+    }
+
+    &__accomp {
+      position: absolute;
+      top: 37px;
+      left: 10px;
+      font-size: 1.5rem;
+      text-overflow: ellipsis;
+    }
+
+    &__price {
+      position: absolute;
+      bottom: 12px;
+      right: 15px;
+      font-size: 1.5rem;
+    }
   }
 
-  &__price {
-    position: absolute;
-    bottom: 12px;
-    right: 15px;
-    font-size: 1.5rem;
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 68px;
+
+    & i {
+      font-size: 2rem;
+      color: white;
+    }
   }
 
   &:nth-child(2) {
