@@ -31,7 +31,6 @@
   border-radius: 15px;
   box-shadow: 0 5px 10px 2px #ebebeb;
   overflow: hidden;
-  background-color: $color-tertiary;
   transform-origin: left;
 
   &:hover {
@@ -39,6 +38,8 @@
     & .article-plat__check {
       width: 75px;
       transition: width 300ms ease-out;
+    }
+    & .article-plat__check i {
       animation: spinner 300ms ease-out;
     }
   }
@@ -54,13 +55,20 @@
       position: absolute;
       top: 11px;
       left: 10px;
+      right: 72px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &__accomp {
       position: absolute;
       top: 37px;
       left: 10px;
+      right: 49px;
       font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
       text-overflow: ellipsis;
     }
 
@@ -76,8 +84,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     width: 0;
     height: 68px;
+    background-color: $color-tertiary;
 
     & i {
       font-size: 2rem;
