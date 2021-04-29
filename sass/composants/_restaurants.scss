@@ -19,8 +19,9 @@
     margin-bottom: 20px;
   }
 
-  @include desktop-lg {
-    width: 24%;
+  @include desktop {
+    width: 33%;
+    margin-bottom: 20px;
   }
 
   &__cont-img {
@@ -39,6 +40,10 @@
     position: absolute;
     top: 189px;
     left: 14px;
+    right: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__district {
@@ -47,6 +52,10 @@
     font-size: 1.7rem;
     top: 215px;
     left: 14px;
+    right: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__like {
