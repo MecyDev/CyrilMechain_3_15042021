@@ -20,12 +20,18 @@
     @include desktop {
       flex-direction: row;
       flex-wrap: nowrap;
-
       align-items: center;
     }
   }
 
+  &--menu {
+    width: 100%;
+  }
+
   &--btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-top: 52px;
     margin-bottom: 0;
