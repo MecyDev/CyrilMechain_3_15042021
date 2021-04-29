@@ -49,14 +49,12 @@
   80% {
     opacity: 1;
   }
-  99% {
+  99%,
+  100% {
     opacity: 0;
-    width: 100vw;
-    height: 100vh;
+    transform: scale(1);
   }
   to {
-    width: 0;
-    height: 0;
-    opacity: 0;
+    transform: scale(0);
   }
 }
