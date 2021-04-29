@@ -13,8 +13,10 @@ footer {
 
   .footer {
     &__content {
+      width: 90%;
+      max-width: map-get($breakpoints, desktop-lg);
+      margin: auto;
       padding-top: 25px;
-      padding-left: 25px;
     }
 
     &__heading {

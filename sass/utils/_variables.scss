@@ -18,3 +18,10 @@ $btn-gradient-ligth: linear-gradient(
   55%,
   lighten($color-primary, 5%)
 );
+
+/*breakpoints*/
+$breakpoints: (
+  tablette: 900px,
+  desktop: 1200px,
+  desktop-lg: 1440px,
+);

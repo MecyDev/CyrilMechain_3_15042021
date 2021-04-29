@@ -1,5 +1,8 @@
 .section--restaurants {
   height: 1226px;
+  @include large {
+    height: 100%;
+  }
   padding-bottom: 20px;
   background-color: $back-color;
 }
@@ -10,6 +13,15 @@
   height: 251px;
   border-radius: 15px;
   box-shadow: 0 5px 10px 5px #ebebeb;
+
+  @include large {
+    width: 49%;
+    margin-bottom: 20px;
+  }
+
+  @include desktop-lg {
+    width: 24%;
+  }
 
   &__cont-img {
     width: 100%;

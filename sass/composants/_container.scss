@@ -4,7 +4,26 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 90%;
+  max-width: map-get($breakpoints, desktop-lg);
   margin: 45px auto 45px auto;
+
+  @include large {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &--fonctionnement {
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      align-items: center;
+    }
+  }
 
   &--btn {
     align-items: center;

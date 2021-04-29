@@ -1,6 +1,11 @@
 .section--fonctionnement {
   height: 420px;
   margin-bottom: 15px;
+
+  @include desktop {
+    height: 120px;
+    margin-bottom: 0;
+  }
 }
 
 .operation {
@@ -10,6 +15,11 @@
   background-color: $back-color;
   border-radius: 20px;
   box-shadow: 0 5px 10px 2px #ebebeb;
+  flex-shrink: 1;
+
+  @include desktop {
+    margin-left: 20px;
+  }
 
   &--mauve {
     background-color: #f5edff;
