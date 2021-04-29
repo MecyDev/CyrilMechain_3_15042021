@@ -11,18 +11,23 @@ header {
 }
 
 .header {
+  &__content {
+    position: relative;
+    width: 95%;
+    max-width: 1440px;
+    margin: auto;
+  }
+
   &__heading {
     width: 165px;
     margin-top: 5px;
-    /*font-family: $font-log_and_tit;
-      font-size: 3rem;*/
   }
 
   &__return {
     position: absolute;
     font-size: 2rem;
     color: black;
-    top: 24px;
-    left: 24px;
+    top: 9px;
+    left: -1px;
   }
 }
