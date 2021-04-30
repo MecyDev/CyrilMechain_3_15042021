@@ -21,7 +21,7 @@
     background-color: $color-tertiary;
     border: none;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 11px;
   }
 }
 
@@ -100,25 +100,25 @@
 
   &:nth-child(2) {
     opacity: 0;
-    animation: fadein 0.8s forwards;
+    animation: fadein 450ms forwards;
     transform: translateY(-7px);
   }
 
   &:nth-child(3) {
     opacity: 0;
-    animation: fadein 0.8s 0.2s forwards;
+    animation: fadein 550ms 200ms forwards;
     transform: translateY(-7px);
   }
 
   &:nth-child(4) {
     opacity: 0;
-    animation: fadein 0.8s 0.4s forwards;
+    animation: fadein 650ms 400ms forwards;
     transform: translateY(-7px);
   }
 
   &:nth-child(5) {
     opacity: 0;
-    animation: fadein 0.8s 0.6s forwards;
+    animation: fadein 750ms 600ms forwards;
     transform: translateY(-7px);
   }
 }

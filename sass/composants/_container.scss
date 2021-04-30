@@ -28,6 +28,23 @@
     width: 100%;
   }
 
+  &--fade-anim {
+    & section:nth-child(1) {
+      opacity: 0;
+      animation: fadein 200ms forwards;
+    }
+
+    & section:nth-child(2) {
+      opacity: 0;
+      animation: fadein 300ms 200ms forwards;
+    }
+
+    & section:nth-child(3) {
+      opacity: 0;
+      animation: fadein 400ms 300ms forwards;
+    }
+  }
+
   &--btn {
     display: flex;
     flex-direction: column;
