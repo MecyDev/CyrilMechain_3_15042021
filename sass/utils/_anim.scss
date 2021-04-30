@@ -24,6 +24,15 @@
   }
 }
 
+@keyframes spinner-fine-in {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes anim-opa {
   from {
     opacity: 0.5;
