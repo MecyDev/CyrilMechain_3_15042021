@@ -16,4 +16,4 @@ This is project 03 of the Open Class Rooms Front-End course. The goal is to inte
 This project is developed with:
 
 - HTML5
-- SASS
+- SASS(SCSS)
